@@ -1,0 +1,233 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box; /* !!!!! */
+}
+
+h1, h2, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #66697e;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    height: 100px;
+    left: 0;
+    z-index: 1000;
+    position: absolute; /* Повверх */
+}
+
+.header__inner {
+    display: flex; /* !!!!! */
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    align-items: center; /* Выравнивание по центру */
+    padding: 35px 0;
+    text-decoration: none;
+}
+
+
+.header__logo {
+    font-size: 23px;
+    opacity: .75;
+    transition: opacity .1s; 
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #66697e;
+    font-weight: 700;
+}
+
+.box {
+    color: #fff;
+    font-weight: 200;
+}
+
+.header__logo:hover {
+    opacity: 1;
+}
+
+.nav {
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase; /* Заглавные */
+    font-size: 13px;
+}
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    opacity: .75; /*Прозрачность текста */
+    transition: opacity .1s; 
+    text-decoration: none; /* Убирает подчеркивание под ссылкой*/
+}
+.nav__link:first-child {
+    margin-left: 0; 
+}
+.nav__link:hover/* Определяет стиль и цвет при наведение */ { 
+    opacity: 1;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* По вертикали */
+    height: 750px;
+    background: #31344e url(ActiveBox/intro.png) center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    
+}
+
+.intro__inner {
+    max-width: 970px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.intro__title {
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1; /* Межстрочный интервал */
+}
+.intro__subtitle {
+    font-size: 22px;
+    margin-bottom: 70px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    vertical-align: top;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btn--red {
+    background-color: #e84545;
+
+}
+
+.btn--red:hover {
+    background-color: #dd3434;
+
+}
+
+.features {
+    display: flex;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+
+.features__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    height: 350px;
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+    border-bottom: solid white 1px;
+    border-right: solid white 1px;
+}
+
+.works__item:hover .works__content {
+    opacity: 1;
+}
+
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(232, 69, 69, .9);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.works__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.works__text {
+    font-size: 14px;
+    color: white;
+}

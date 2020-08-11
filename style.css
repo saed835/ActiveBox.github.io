@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center; /* По вертикали */
     height: 750px;
-    background: #31344e url(ActiveBox/intro.png) center no-repeat;
+    background: #31344e url(intro/intro.png) center no-repeat;
     background-size: cover;
     padding-top: 100px;
     
@@ -124,6 +124,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 .btn {
     display: inline-block;
     padding: 14px 40px;
@@ -135,6 +137,8 @@ body {
     color: #fff;
     border-radius: 3px;
 }
+
+
 
 .btn--red {
     background-color: #e84545;

@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center; /* По вертикали */
     height: 750px;
-    background: #31344e url(intro/intro.png) center no-repeat;
+    background: #31344e url(img/intro/intro.png) center no-repeat;
     background-size: cover;
     padding-top: 100px;
     

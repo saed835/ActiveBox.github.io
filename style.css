@@ -24,7 +24,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -77,20 +77,8 @@ body {
     background: none;
     border: 0;
     cursor: pointer;
+    outline:none;
 }
-
-.burger__item:before,
-.burger__item:after {
-    content: "";
-    height: 100%;
-
-    background-color: #fff;
-
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
-
 
 .burger:hover {
     opacity: 1;

@@ -79,6 +79,19 @@ body {
     cursor: pointer;
 }
 
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+
 .burger:hover {
     opacity: 1;
 }
@@ -488,16 +501,6 @@ body {
 
 
 
-
-@media (max-width: 1300px) {
-    .works__item {
-        width: 50%;
-    }
-}
-
-
-
-
 @media (max-width: 991px) {
 
     .header__logo {
@@ -508,8 +511,25 @@ body {
 
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+
+        background-color: #31344e;
+        text-align: right;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
     }
-    
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
+    }
+
     .burger {
         display: block;
         padding-right: 45px;

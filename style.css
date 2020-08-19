@@ -37,6 +37,18 @@ body {
     position: absolute; /* Повверх */
 }
 
+.header.fixed {
+    position: fixed;
+    height: auto;
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0;
+}
+
 .header__inner {
     display: flex; /* !!!!! */
     justify-content: space-between;

@@ -495,7 +495,9 @@ body {
         padding-left: 50px;
     }
 
-
+    .works__item {
+        width: 50%;
+    }
 
     .nav {
         display: none;
